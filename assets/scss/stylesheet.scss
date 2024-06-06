@@ -1,0 +1,45 @@
+$red: #ec2127;
+$abyss: #060b11;
+$white: #fcfcfa;
+$true_white: #ffffff;
+$grey: #26282a;
+$blue: #4285f4;
+
+@mixin box {
+  border: 2px solid $red; // Adjusted the order of values
+  border-radius: 3px;
+}
+
+@mixin grid_column($times, $amount) {
+  display: grid;
+  grid-template-columns: repeat(#{$times}, #{$amount}); // Fixed syntax
+}
+
+body {
+  main {
+    & {
+    }
+    #character_description {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      img {
+        width: 150px;
+        height: 150px;
+      }
+
+      form#character_info {
+        @include grid_column(2, 1fr); // Fixed syntax
+      }
+    }
+
+    form#character_stats {
+      display: flex;
+      justify-content: space-around;
+
+      .stat_box {
+        @include box;
+        text-align: center;
+      }
+    }
+  }
+}

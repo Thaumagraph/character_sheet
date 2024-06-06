@@ -1,1 +1,21 @@
-/*# sourceMappingURL=stylesheet.css.map */
+body main #character_description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+body main #character_description img {
+  width: 150px;
+  height: 150px;
+}
+body main #character_description form#character_info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+body main form#character_stats {
+  display: flex;
+  justify-content: space-around;
+}
+body main form#character_stats .stat_box {
+  border: 2px solid #ec2127;
+  border-radius: 3px;
+  text-align: center;
+}/*# sourceMappingURL=stylesheet.css.map */

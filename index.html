@@ -4,12 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boilerplate</title>
-    <link rel="stylesheet" href="./assets/scss/stylesheet.scss" />
-    <script src="./assets/js/app.js" defer></script>
+    <link rel="stylesheet" href="/assets/scss/stylesheet.css" />
+    <script src="/assets/js/app.js" defer></script>
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main>
+      <div id="character_description">
+        <div id="character_portrait_container">
+          <!-- Updated ID -->
+          <img id="character_portrait_img" src="" alt="" />
+          <!-- Updated ID -->
+          <input
+            type="file"
+            accept="image/*"
+            name=""
+            id="character_portrait_input"
+          />
+          <!-- Updated ID -->
+        </div>
+        <form id="character_info" action="">
+          <label for="character_name">Name:</label>
+          <input type="text" name="character_name" id="character_name" />
+          <label for="character_race">Race:</label>
+          <input type="text" name="character_race" id="character_race" />
+          <label for="character_class">Class:</label>
+          <input type="text" name="character_class" id="character_class" />
+        </form>
+      </div>
+      <form id="character_stats" action="">
+        <div class="stat_box">
+          <label for="strength_score">Strength score:</label>
+          <input type="number" name="strength_score" id="strength_score" />
+        </div>
+        <div class="stat_box">
+          <label for="dexterity_score">Dexterity score:</label>
+          <input type="number" name="dexterity_score" id="dexterity_score" />
+        </div>
+        <div class="stat_box">
+          <label for="constitution_score">Constitution score:</label>
+          <input
+            type="number"
+            name="constitution_score"
+            id="constitution_score"
+          />
+        </div>
+        <div class="stat_box">
+          <label for="intelligence_score">Intelligence score:</label>
+          <input
+            type="number"
+            name="intelligence_score"
+            id="intelligence_score"
+          />
+        </div>
+        <div class="stat_box">
+          <label for="wisdom_score">Wisdom score:</label>
+          <input type="number" name="wisdom_score" id="wisdom_score" />
+        </div>
+        <div class="stat_box">
+          <label for="charisma_score">Charisma score:</label>
+          <input type="number" name="charisma_score" id="charisma_score" />
+        </div>
+      </form>
+    </main>
     <footer></footer>
   </body>
 </html>
